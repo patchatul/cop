@@ -6,8 +6,8 @@ classRankString = input("Enter class rank: ")
 testScore = int(testScoreString)
 classRank = int(classRankString)
 
-#Unit Tesst 1 testScore 87 & classRank 60 Accept
-#Unit Test 2  testScore 60 & classRank 87 Reject
+#Unit Test 1 testScore 60 & classRank 87 Reject
+#Unit Test 2 testScore 87 & classRank 60 Accept
 if testScore >= 90:
     if classRank >= 25:
         print("Accept")
