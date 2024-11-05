@@ -12,10 +12,10 @@ while a < c:
 d = 4 
 e = 6
 f = 7
-while d < f:
+while d > f:
     d = d + 1
     e = e - 1
-    print(d, e, f)
+print(d, e, f)
 
 #C while g+1 loop as g less than h
 g = 4
