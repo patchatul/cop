@@ -6,7 +6,7 @@ c = 5
 while a < c:
     a = a+1
     b = b+c
-    print(a, b, c)
+print(a, b, c)
 
 #B while d+1,e-1 loop until d more than f
 d = 4 
@@ -22,7 +22,7 @@ g = 4
 h = 6
 while g < h:
     g = g + 1
-    print(g, h)
+print(g, h)
 
 #D while j less than k m=6, j+1, while m less than n print Goodbye & m+1
 j = 2
