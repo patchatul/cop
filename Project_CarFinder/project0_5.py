@@ -19,7 +19,7 @@ while True :
             AllowedVehiclesList = db.read()
             db.close()
         print(f'The AutoCountry sales manager has authorized the purchase and selling of the following vehicles: {AllowedVehiclesList}')
-#2. serach cars
+#2. search cars
     elif choose_menu == "2":
         search_vehicle = input("Please Enter the full Vehicle name: ")
         if search_vehicle in AllowedVehiclesList:
@@ -42,9 +42,8 @@ while True :
                 lines = db.readlines()
             with open("Project_CarFinder/cars.txt", mode="w") as db:
                 for line in lines:
-                    if remove_vehicle.strip() in line:
-                        db.writelines(line)
-                        db.close()
+                    if line.strip() != remove_vehicle:
+                        db.write(line)
             print(f'You have REMOVED "{remove_vehicle}" as an authorized vehicle')
 #5. exit
     elif choose_menu == "5":
