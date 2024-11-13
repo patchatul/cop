@@ -45,6 +45,10 @@ while True :
                     if line.strip() != remove_vehicle:
                         db.write(line)
             print(f'You have REMOVED "{remove_vehicle}" as an authorized vehicle')
+        elif sure_to_remove.lower() == "no":
+            print(f'You have NOT removed "{remove_vehicle}".')
+        else:
+            print(f'"{remove_vehicle}" is not an authorized vehicle, if you received this in error please check the spelling and try again')
 #5. exit
     elif choose_menu == "5":
         print("Thank you for using the AutoCountry Vehicle Finder, good-bye!")
