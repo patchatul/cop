@@ -15,10 +15,11 @@ while True :
     choose_menu = (input("Enter Here: "))
 #1. print cars
     if choose_menu == "1":
-        with open("Project_CarFinder/cars.txt", mode="r") as db:
-            AllowedVehiclesList = db.read()
+        def read():
+            with open("Project_CarFinder/cars.txt", mode="r") as db:
+                return 
             db.close()
-        print(f'The AutoCountry sales manager has authorized the purchase and selling of the following vehicles: \n{AllowedVehiclesList}')
+        print(f'The AutoCountry sales manager has authorized the purchase and selling of the following vehicles: {AllowedVehiclesList}')
 #2. search cars
     elif choose_menu == "2":
         search_vehicle = input("Please Enter the full Vehicle name: ")
