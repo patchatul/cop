@@ -1,6 +1,6 @@
 #each choose_menu as function && open cars list from a file
 menu = """********************************
-AutoCountry Vehicle Finder v0.5
+AutoCountry Vehicle Finder v0.6
 ********************************
 Please Enter the following number below from the following menu:
 1. PRINT all Authorized Vehicles
